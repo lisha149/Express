@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Assignment</title>
+  </head>
+  <style>
+    p,
+    h2 {
+      padding: 0 50px;
+    }
+
+    #contact {
+      padding: 100px 0;
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .contact-left {
+      flex-basis: 50%;
+    }
+
+    .contact-left img {
+      width: 100%;
+    }
+    .contact-right {
+      flex-basis: 50%;
+    }
+    form {
+      max-width: 400px;
+      margin: 30px 0;
+    }
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5px;
+      box-sizing: border-box;
+      border: 2px solid salmon;
+      outline: none;
+      box-shadow: none;
+    }
+
+    footer {
+      padding: 40px 0 30px;
+      position: relative;
+    }
+    hr {
+      width: 100%;
+      border: 0;
+      border-top: 1px solid #f67c92;
+    }
+    .footer-text p {
+      margin-top: 2px;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <h2>Welcome</h2>
+    <h2 style="color: red"><%=name%></h2>
+    <br />
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+    <br />
+    <section id="contact">
+      <div class="container contact">
+        <div class="contact-left">
+          <img src="images/contact.jpg" />
+        </div>
+        <div class="contact-right">
+          <h2>Sign Up to Join our Community</h2>
+          <span class="line"></span>
+          <form>
+            <input type="text" placeholder="Enter name" />
+            <input type="email" placeholder="Enter email" />
+            <input type="password" placeholder="Enter password" />
+            <button class="btn">Sign Up</button>
+          </form>
+        </div>
+        <br />
+      </div>
+    </section>
+    <footer>
+      <div class="container footer-line">
+        <hr />
+        <div class="footer-text">
+          <p>Welcome©Copyright 2022</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
